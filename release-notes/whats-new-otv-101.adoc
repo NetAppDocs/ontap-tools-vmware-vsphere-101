@@ -1,0 +1,68 @@
+---
+permalink: release-notes/whats-new-otv-101.html
+sidebar: sidebar
+keywords: what's new, release notes, otv, 10.1
+summary: "Learn about the new capabilities available in OTV 10.1."
+---
+
+= What's new in ONTAP tools for VMware vSphere 10.1
+
+[.lead]
+Learn about the new capabilities available in ONTAP tools for VMware vSphere 10.1.
+
+[cols="30%,70%",options="header"]
+|===
+| Update | Description
+a|
+xref:../manage/migrate-standard-virtual-machines-to-vvols-datastores.html[NFS and VMFS datastore support]
+a|
+This release of ONTAP tools for VMware vSphere supports vVols datastore provisioning through the VASA Provider and NFS v3 and VMFS datastores. Datastore operations like create, resize, mount, unmount, and delete are supported. You can provision VMFS datastores using iSCSI protocol. As a VMware admin, you can seamlessly deploy, upgrade and transition iSCSI VMFS datastores from ONTAP tools for VMware vSphere 9.xx version to 10.1 version. Migration is supported from ONTAP tools for VMware vSphere 9.10D2, 9.11D4, 9.12, and 9.13 releases to 10.1 release.
+a|
+xref:../protect/configure-storage-replication-adapter-for-san-environment.html[Storage Replication Adapter (SRA) for NFS and VMFS datastores] 
+a|
+SRA implements VMware Site Recovery Manager (SRM) specification based disaster recovery (DR) solution. For NFS datastores, ONTAP volumes are mounted on ESXi host using the NFS v3 protocols. For VMFS datastores, ONTAP LUNS are mounted on ESXi host using iSCSI protocol.
+
+ONTAP SnapMirrors replicate volumes and LUNs in the destination site. SRA implements testFailover, failover, and reprotect commands invoked from VMware SRM. As part of implementation, SRA ensures that all volumes and LUNs are mountable on destination in recovery incident and the secondary site volumes and LUNs are read to avoid data discrepancy.
+a|
+xref:../configure/dashboard-overview.html[Rich vCenter User Interface(UI) integration support for all workflows] 
+a|
+ONTAP tools for VMware vSphere 10.1 provides user interface for workflows to bring parity with ONTAP tools for VMware vSphere 9.xx releases. The remote plug-in supports:
+
+* xref:../manage/migrate-standard-virtual-machines-to-vvols-datastores.html[Observability and Monitoring of NFS, VMFS, and vVols datastores]
+* xref:../protect/configure-storage-replication-adapter-for-san-environment.html[Storage Replication Adapter for NFS and VMFS datastores]
+* xref:../configure/registration-process.html[VASA provider registration and unregistration]
+* xref:../configure/install-nfs-vaai-plug-in.html[VAAI plug-in installation]
+* xref:../manage/collect-the-log-files.html[Log bundle download for the selected vCenter]
+a|
+xref:../deploy/nonha-deployment.html[Easy deployment variant support] 
+a|
+You can quickly onboard ONTAP tools for VMware vSphere 10.1 and experience its features using the easy deployment option. SnapShot based recovery is supported in easy deployment.
+a|
+xref:../configure/manager-user-interface.html[ONTAP tools Manager UI for all ONTAP tools admin workflows] 
+a|
+ONTAP tools Manager provides better control to ONTAP tools administrator over the managed vCenters and onboarded storage backends. ONTAP tools Manager helps in:
+
+* vCenter management - Add and manage vCenters to ONTAP tools for VMware vSphere.
+* Storage backend management - Add and manage ONTAP storage clusters to ONTAP tools for VMware vSphere and map them to onboarded vCenters globally.
+* Log bundle downloads - Collect log files for ONTAP tools for VMware vSphere.
+* Certificate management - Change the self-signed certificate to custom CA certificate and renew or refresh all certificates.
+* Password management - Reset OVA application password for the user.
+a|
+xref:../manage/certificate-manage.html[Certificate management] 
+a|
+Single instance of ONTAP tools for VMware vSphere can manage multiple vCenters. When you deploy ONTAP tools for VMware vSphere, self-signed certificate is assigned to all vCenters by default. When you’re managing multiple vCenters and you want to enable vVols capability on multiple vCenters, you must change the self-signed certificate to custom CA certificate using ONTAP tools Manager interface. You can use the same interface to renew or refresh all certificates.
+a|
+xref:../concepts/ontap-tools-concepts-terms.html[Zero-Recovery point objective (RPO) recovery] 
+a|
+If you lose your ONTAP tools for VMware vSphere setup, you can recover your ONTAP tools setup using the ONTAP data management software without any data loss. Zero RPO recovery is not supported for easy deployment.
+a|
+iSCSI protocol support for deployment
+a|
+Trident supports NFS and iSCSI protocol to provision persistent volumes. When deploying the ONTAP tools for VMware vSphere, you can choose iSCSI protocol to store VASA provider services data in persistent volumes.
+a|
+IPv6 address support for storage and vCenter onboarding
+a|
+You can onboard storage backend with IPv4 address, IPv6 address, or fully qualified domain name (FQDN). Storage services and Storage Proxy services use onboarded credential with same IPv4 or IPv6 address to communicate with ONTAP REST APIs. Data path is supported with IPv4 address, IPv6 address, or FQDN using export policy rule.
+|===
+
+
