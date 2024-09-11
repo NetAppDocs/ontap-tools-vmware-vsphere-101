@@ -10,7 +10,7 @@ summary: "Learn about the OTV 9 and OTV 10 feature comparison"
 
 [.lead]
 
-For the most up-to-date compatibility information, see https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+Learn whether migrating from OTV 9 to OTV 10.1 is right for you. For the most up-to-date compatibility information see https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 [cols="20%,40%,40%",options="header"]
 |===
