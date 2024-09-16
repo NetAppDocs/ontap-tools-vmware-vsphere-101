@@ -2,15 +2,15 @@
 permalink: release-notes/otv-9-otv10-feature-comparison.html
 sidebar: sidebar
 keywords: release notes, feature, comparison
-summary: "Learn about the OTV 9 and OTV 10 feature comparison"
+summary: "Learn about the ONTAP tools for VMware vSphere 9 and ONTAP tools for VMware vSphere 10 feature comparison"
 ---
-= OTV 9 and OTV 10 feature comparison
+= ONTAP tools for VMware vSphere 9 and ONTAP tools for VMware vSphere 10 feature comparison
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
 
-Learn whether migrating from OTV 9 to OTV 10.1 is right for you. For the most up-to-date compatibility information see https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
+Learn whether migrating from ONTAP tools for VMware vSphere 9 to ONTAP tools for VMware vSphere 10.1 is right for you. For the most up-to-date compatibility information see https://mysupport.netapp.com/matrix[NetApp Interoperability Matrix Tool^].
 
 [cols="20%,40%,40%",options="header"]
 |===
