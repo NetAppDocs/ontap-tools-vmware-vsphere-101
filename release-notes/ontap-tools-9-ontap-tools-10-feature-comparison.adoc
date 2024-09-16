@@ -1,5 +1,5 @@
 ---
-permalink: release-notes/otv-9-otv10-feature-comparison.html
+permalink: release-notes/ontap-tools-9-ontap-tools-10-feature-comparison.html
 sidebar: sidebar
 keywords: release notes, feature, comparison
 summary: "Learn about the ONTAP tools for VMware vSphere 9 and ONTAP tools for VMware vSphere 10 feature comparison"
@@ -32,21 +32,21 @@ VMware release support
 |
 vSphere 7.x-8.x
 
-SRM 8.5-9.0 
+VMware Site Recovery Manager (SRM) 8.5 and VMware Live Site Recovery 9.0
 |
 vSphere 7.x-8.x
 
-SRM 8.7-9.0
+VMware Site Recovery Manager (SRM) 8.7 and VMware Live Site Recovery 9.0
 |
 Protocol support
 |
-Traditional datastores: NFS (v3 and v4.1), VMFS (iSCSI and FCP)
+VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI and FCP)
 
-vVols: iSCSI, FCP, NVMe/FC, NFS v3
+vVols datastore: iSCSI, FCP, NVMe/FC, NFS v3
 |
-Traditional datastores: NFS (v3 and v4.1), VMFS (iSCSI)
+VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI)
 
-vVols: iSCSI, NFS v3
+vVols datastore: iSCSI, NFS v3
 |
 Scalability
 |
@@ -54,11 +54,11 @@ Hosts and VMs: 300 Hosts, up to 10K VMs
 
 Datastores: 600 NFS, up to 50 VMFS, up to 250 vVols
 
-vVols: Up to 14K
+vVols datastore: Up to 14K
 |
 Hosts and VMs: 600 Hosts
 
-vVols: Up to 140K
+vVols datastore: Up to 140K
 |
 Observability
 |
