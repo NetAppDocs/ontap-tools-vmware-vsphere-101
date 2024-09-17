@@ -32,21 +32,21 @@ VMware release support
 |
 vSphere 7.x-8.x
 
-VMware Site Recovery Manager (SRM) 8.5 and VMware Live Site Recovery 9.0
+VMware Site Recovery Manager (SRM) 8.5 to VMware Live Site Recovery 9.0
 |
 vSphere 7.x-8.x
 
-VMware Site Recovery Manager (SRM) 8.7 and VMware Live Site Recovery 9.0
+VMware Site Recovery Manager (SRM) 8.7 to VMware Live Site Recovery 9.0
 |
 Protocol support
 |
-VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI and FCP)
+NFS and VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI and FCP)
 
-vVols datastore: iSCSI, FCP, NVMe/FC, NFS v3
+vVols datastores: iSCSI, FCP, NVMe/FC, NFS v3
 |
-VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI)
+NFS and VMFS datastores: NFS (v3 and v4.1), VMFS (iSCSI)
 
-vVols datastore: iSCSI, NFS v3
+vVols datastores: iSCSI, NFS v3
 |
 Scalability
 |
@@ -54,11 +54,11 @@ Hosts and VMs: 300 Hosts, up to 10K VMs
 
 Datastores: 600 NFS, up to 50 VMFS, up to 250 vVols
 
-vVols datastore: Up to 14K
+vVols: Up to 14K
 |
 Hosts and VMs: 600 Hosts
 
-vVols datastore: Up to 140K
+vVols: Up to 140K
 |
 Observability
 |
