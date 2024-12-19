@@ -47,6 +47,7 @@ Host names should be mapped to the free IP addresses on the DNS before assigning
 .. Content library name
 .. OVF template name
 .. IPv6 gateway (optional)
+. Before installing the ONTAP tools for VMware vSphere 10.1 in non-HA advanced and HA configuration, check the KB article: https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/pre-requisites_for_installing_OTV_10.1_and_10.2_in_NonHA_Advanced_and_HA[Pre-requisites for non-HA advanced and HA configuration].
 
 
 
